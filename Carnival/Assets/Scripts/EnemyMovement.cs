@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -23,7 +22,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Boundary")
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
             moveSpeed *= -1;
         }
     }

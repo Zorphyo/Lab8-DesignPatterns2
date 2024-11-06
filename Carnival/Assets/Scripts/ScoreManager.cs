@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ScoreManager : MonoBehaviour
+public class ScoreManager : MonoBehaviour, IObserver
 {
     public int score;
     public TMP_Text scoreText;
@@ -25,5 +25,10 @@ public class ScoreManager : MonoBehaviour
     {
         score += points;
         scoreText.text = "Score: " + score;
+    }
+
+    public void UpdateObserver(ISubject subject)
+    {
+        
     }
 }
