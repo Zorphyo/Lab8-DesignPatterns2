@@ -4,9 +4,9 @@ using UnityEngine;
 
 public interface IBuilder
 {
-    void BuildEnemyOne();
+    void BuildPartSize(Enemy enemy);
 
-    void BuildEnemyTwo();
+    void BuildPartPointValue(Enemy enemy);
 
-    void BuildEnemyThree();
+    void BuildPartColor(Enemy enemy);
 }

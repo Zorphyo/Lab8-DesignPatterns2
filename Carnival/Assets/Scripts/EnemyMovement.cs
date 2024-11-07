@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float moveSpeed = 3;
+    public float moveSpeed = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Boundary")
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y - 0.25f, transform.position.z);
             moveSpeed *= -1;
         }
     }
