@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class ScoreManager : MonoBehaviour, IObserver
 {
@@ -21,14 +22,9 @@ public class ScoreManager : MonoBehaviour, IObserver
         
     }
 
-    public void UpdateScore(int points)
-    {
-        score += points;
-        scoreText.text = "Score: " + score;
-    }
-
     public void UpdateObserver(ISubject subject)
     {
-        
+        score += subject.ConvertTo<Enemy>().pointValue;
+        scoreText.text = "Score: " + score;
     }
 }

@@ -658,7 +658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 0
-  pointValue: 0
+  pointValue: 75
   enemyColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!61 &571510216
 BoxCollider2D:
@@ -767,8 +767,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1025350805}
   - component: {fileID: 1025350808}
-  - component: {fileID: 1025350806}
   - component: {fileID: 1025350809}
+  - component: {fileID: 1025350806}
   m_Layer: 0
   m_Name: Enemy1 (2)
   m_TagString: Enemy
@@ -804,7 +804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 0
-  pointValue: 0
+  pointValue: 50
   enemyColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!212 &1025350808
 SpriteRenderer:
@@ -1185,7 +1185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 0
-  pointValue: 0
+  pointValue: 25
   enemyColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!58 &1411752418
 CircleCollider2D:

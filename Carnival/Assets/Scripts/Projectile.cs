@@ -24,8 +24,10 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            scoreManager.UpdateScore(50);
+            collision.GetComponent<Enemy>().Notify();
+            collision.GetComponent<Enemy>().Detach(GameObject.Find("ScoreManager").GetComponent<ScoreManager>());
             Destroy(collision.gameObject);
+            
             gameObject.SetActive(false);
         }
 

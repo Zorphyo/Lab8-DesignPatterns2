@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour, ISubject
     // Start is called before the first frame update
     void Start()
     {
-        
+        Attach(GameObject.Find("ScoreManager").GetComponent<ScoreManager>());
     }
 
     // Update is called once per frame
