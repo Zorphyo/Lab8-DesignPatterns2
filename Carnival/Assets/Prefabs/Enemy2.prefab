@@ -144,5 +144,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySize: 0.2
-  pointValue: 54
-  enemyColor: {r: 0.25909692, g: 0.90055203, b: 0.113980174, a: 1}
+  pointValue: 66
+  enemyColor: {r: 0.55943125, g: 0.5924035, b: 0.03414452, a: 1}
