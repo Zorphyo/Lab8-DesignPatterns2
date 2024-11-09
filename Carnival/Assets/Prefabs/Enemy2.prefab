@@ -143,6 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c7f071ceaf6e04cb7a00cba2b7c8c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySize: 0.2
-  pointValue: 66
-  enemyColor: {r: 0.55943125, g: 0.5924035, b: 0.03414452, a: 1}
+  enemySize: 0.1
+  pointValue: 92
+  enemyColor: {r: 0.9724091, g: 0.38229078, b: 0.1332891, a: 1}
